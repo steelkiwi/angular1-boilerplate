@@ -2,16 +2,14 @@
 
 
 [![Gulp](https://s10.postimg.org/qn2ov4b4p/gulp.png)](https://github.com/gulpjs/gulp)
-[![NAME](IMG)](LINK)
-[![NAME](IMG)](LINK)
-[![NAME](IMG)](LINK)
-[![NAME](IMG)](LINK)
-[![NAME](IMG)](LINK)
+[![Angular 1.5](https://s11.postimg.org/lvqgbpj5v/angular.png)](https://github.com/angular/angular.js)
+[![Bootstrap](https://s4.postimg.org/7tm0k2oq5/bootstrap.png)](https://github.com/twbs/bootstrap)
+[![Bower](https://s10.postimg.org/47f0tmo4p/bower.png)](https://github.com/bower/bower)
 
 
 ## Features:
 - [Gulp](https://github.com/gulpjs/gulp)
-- Angular 1.5 (component-oriented)
+- [Angular 1.5](https://github.com/angular/angular.js) (component-oriented)
 - Angular UI Router
 - Bootstrap 3 (Less)
 - Bower
