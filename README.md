@@ -5,6 +5,11 @@
 [![Angular 1.5](https://s11.postimg.org/lvqgbpj5v/angular.png)](https://github.com/angular/angular.js)
 [![Bootstrap](https://s4.postimg.org/7tm0k2oq5/bootstrap.png)](https://github.com/twbs/bootstrap)
 [![Bower](https://s10.postimg.org/47f0tmo4p/bower.png)](https://github.com/bower/bower)
+[![BrowserSync](https://s11.postimg.org/xhirska8j/browsersync.png)](https://github.com/browsersync/browser-sync)
+[![Babel](https://s15.postimg.org/7p8tnd7rv/babel.png)](https://github.com/babel/babel/)
+[![Less](https://s15.postimg.org/80vsmt0gb/less.png)](https://github.com/less/less.js)
+[![Less](https://s15.postimg.org/80vsmt0gb/less.png)](https://github.com/less/less.js)
+[![Less](https://s15.postimg.org/80vsmt0gb/less.png)](https://github.com/less/less.js)
 
 
 ## Features:
@@ -14,8 +19,8 @@
 - Bootstrap 3 (Less)
 - Bower
 - Script injection
-- BrowserSync
-- ES6 with Babel
+- [BrowserSync](https://github.com/browsersync/browser-sync)
+- ES6 via [Babel](https://github.com/babel/babel/)
 - ESLint
 - Less
 - Autoprefixer
