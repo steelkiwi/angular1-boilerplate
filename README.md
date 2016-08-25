@@ -9,7 +9,8 @@
 [![Babel](https://s12.postimg.org/j9hs9l219/babel.png)](https://github.com/babel/babel/)
 [![ES6](https://s9.postimg.org/nxb8a31pb/es6.png)](http://www.ecma-international.org/ecma-262/6.0/)
 [![ESLint](https://s16.postimg.org/pgxwmkej9/eslint.png)](https://github.com/sindresorhus/xo)
-[![Less](https://s15.postimg.org/80vsmt0gb/less.png)](https://github.com/less/less.js)
+[![Less](https://s9.postimg.org/msaf0hov3/less.png)](https://github.com/less/less.js)
+[![Autoprefixer](https://s15.postimg.org/5ax2qgrqz/autoprefixer.png)](https://github.com/postcss/autoprefixer)
 [![Protractor](https://s13.postimg.org/ijrsfrlpz/protractor.png)](https://github.com/angular/protractor)
 [![Jasmine](https://s9.postimg.org/cd8gwyjy7/jasmine.png)](https://github.com/jasmine/jasmine)
 [![Karma](https://s11.postimg.org/jaz2uy6mr/karma.png)](https://github.com/karma-runner/karma)
@@ -20,16 +21,16 @@
 - [Angular UI Router](https://github.com/angular-ui/ui-router)
 - [Bootstrap 3](https://github.com/twbs/bootstrap) (Less)
 - [Bower](https://github.com/bower/bower)
-- Script injection
+- Script injection via [Wiredep](https://github.com/taptapship/wiredep)
 - [BrowserSync](https://github.com/browsersync/browser-sync)
 - [ES6](http://www.ecma-international.org/ecma-262/6.0/) via [Babel](https://github.com/babel/babel/)
 - [ESLint](https://github.com/sindresorhus/xo)
 - [Less](https://github.com/less/less.js)
-- Autoprefixer
+- [Autoprefixer](https://github.com/postcss/autoprefixer)
 - HTML/JS/CSS minification, uglification, concatenation
 - Sourcemaps
-- [Karma](https://github.com/karma-runner/karma), [Jasmine](https://github.com/jasmine/jasmine), [Protractor](https://github.com/angular/protractor) and PhantomJS for testing
-- Django CSRF protection support
+- [Karma](https://github.com/karma-runner/karma), [Jasmine](https://github.com/jasmine/jasmine), [Protractor](https://github.com/angular/protractor) and [PhantomJS](https://github.com/ariya/phantomjs/) for testing
+- [Django CSRF protection support](https://docs.djangoproject.com/en/1.10/ref/csrf/)
 
 
 ## Usage
