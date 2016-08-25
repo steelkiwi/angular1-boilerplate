@@ -1,5 +1,13 @@
 # Changelog
 
+## v.NEXT
+- Integration with the LessHint linter
+- Support of the favicon generator
+- Sprites generator
+- ECMAScript 6 modules
+
+---
+
 ## v.1.0.0
 - Initial gulp configuration
 - Angular 1.5.8
