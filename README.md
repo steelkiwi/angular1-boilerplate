@@ -1,8 +1,11 @@
 # Angular 1.x boilerplate
 
 
+[![Gulp](https://s10.postimg.org/qn2ov4b4p/gulp.png)](https://github.com/gulpjs/gulp)
+
+
 ## Features:
-- Gulp
+- [Gulp](https://github.com/gulpjs/gulp)
 - Angular 1.5 (component-oriented)
 - Angular UI Router
 - Bootstrap 3 (Less)
