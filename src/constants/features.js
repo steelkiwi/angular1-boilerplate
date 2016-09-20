@@ -8,7 +8,6 @@
             'Angular 1.5 (component-oriented)',
             'Angular UI Router',
             'Bootstrap 3 (Less)',
-            'Bower',
             'Script injection',
             'BrowserSync',
             'ES6 with Babel',

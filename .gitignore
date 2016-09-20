@@ -5,6 +5,5 @@ npm-debug.log*
 coverage/
 dist/
 node_modules/
-bower_components/
 .npm
 .eslintcache
