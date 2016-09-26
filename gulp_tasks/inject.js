@@ -15,7 +15,8 @@ function inject() {
         conf.path.tmp('components/*.js'),
         conf.path.tmp('pages/*.js'),
         conf.path.tmp('**/*.js'),
-        `!${conf.path.tmp('**/*.spec.js')}`
+        `!${conf.path.tmp('**/*.spec.js')}`,
+        `!${conf.path.tmp('**/modules.js')}`
     ]);
 
     const injectOptions = {
