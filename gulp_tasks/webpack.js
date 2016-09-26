@@ -2,6 +2,7 @@ const gulp = require('gulp');
 const gulpWebpack = require('webpack');
 const gulplog = require('gulplog');
 const path = require('path');
+const UglifyJsPlugin = require("webpack/lib/optimize/UglifyJsPlugin");
 
 const conf = require('../conf/gulp.conf');
 
@@ -9,7 +10,7 @@ gulp.task('webpack', webpack);
 
 function webpack(callback) {
     const options = {
-        context: './node_modules',
+        context: conf.paths.modules, // './node_modules',
         entry: [
             './angular/angular.js',
             './angular-cookies/angular-cookies.js',
@@ -20,7 +21,12 @@ function webpack(callback) {
         output: {
             filename: 'modules.js',
             path: './.tmp'
-        }
+        },
+        plugins: [
+            new UglifyJsPlugin({
+                compress: true
+            })
+        ]
     };
 
     return gulpWebpack(options, function(err, stat) {
