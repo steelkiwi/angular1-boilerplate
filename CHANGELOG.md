@@ -8,6 +8,10 @@
 
 ---
 
+## v.1.1.0
+- Remove Bower
+- Add Webpack
+
 ## v.1.0.0
 - Initial gulp configuration
 - Angular 1.5.8

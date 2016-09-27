@@ -21,7 +21,8 @@ exports.paths = {
     dist: 'dist',
     tmp: '.tmp',
     e2e: 'e2e',
-    tasks: 'gulp_tasks'
+    tasks: 'gulp_tasks',
+    modules: 'node_modules'
 };
 
 exports.path = {};
@@ -44,12 +45,4 @@ exports.errorHandler = function (title) {
         gutil.log(gutil.colors.red(`[${title}]`), err.toString());
         this.emit('end');
     };
-};
-/**
- *  Wiredep is the lib which inject bower dependencies in your project
- *  Mainly used to inject script tags in the index.html but also used
- *  to inject css preprocessor deps and js files in karma
- */
-exports.wiredep = {
-    directory: 'bower_components'
 };
