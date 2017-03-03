@@ -21,7 +21,6 @@
 - [Angular UI Router](https://github.com/angular-ui/ui-router)
 - [Bootstrap 3](https://github.com/twbs/bootstrap) (Less)
 - [Webpack](https://github.com/webpack/webpack)
-- Script injection via [Wiredep](https://github.com/taptapship/wiredep)
 - [BrowserSync](https://github.com/browsersync/browser-sync)
 - [ES6](http://www.ecma-international.org/ecma-262/6.0/) via [Babel](https://github.com/babel/babel/)
 - [ESLint](https://github.com/sindresorhus/xo)

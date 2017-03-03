@@ -10,7 +10,7 @@ gulp.task('webpack', webpack);
 
 function webpack(callback) {
     const options = {
-        context: conf.paths.modules, // './node_modules',
+        context: conf.paths.modules, // './node_modules'
         entry: [
             './angular/angular.js',
             './angular-cookies/angular-cookies.js',
@@ -31,21 +31,21 @@ function webpack(callback) {
 
     return gulpWebpack(options, function(err, stat) {
         if (!err) {
-          err = stat.toJson().errors[0];
+            err = stat.toJson().errors[0];
         }
 
         if (err) {
-          gulplog.error(err);
+            gulplog.error(err);
         } else {
-          gulplog.info(stat.toString({
-            colors: true
-          }));
+            gulplog.info(stat.toString({
+                colors: true
+            }));
         }
 
         if (err) {
-          callback(err);
+            callback(err);
         } else {
-          callback();
+            callback();
         }
     })
 }
