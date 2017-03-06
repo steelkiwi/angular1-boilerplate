@@ -8,6 +8,10 @@
 
 ---
 
+## v.1.2.0
+- Remove Wiredep
+- Integration with the LessHint linter
+
 ## v.1.1.0
 - Remove Bower
 - Add Webpack
@@ -24,5 +28,5 @@
 - ES6 support via Babel.js
 - Autoprefixer
 - Sourcemaps
-- Karma and Jasmine for testing
+- Karma, Jasmine and PhantomJS for testing
 - Django CSRF protection support
