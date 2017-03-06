@@ -1,7 +1,6 @@
 # Changelog
 
 ## v.NEXT
-- Integration with the LessHint linter
 - Support of the favicon generator
 - Sprites generator
 - ECMAScript 6 modules
@@ -9,11 +8,11 @@
 ---
 
 ## v.1.2.0
-- Remove Wiredep
 - Integration with the LessHint linter
+- Support of the favicon generator
 
 ## v.1.1.0
-- Remove Bower
+- Remove Bower and Wiredep
 - Add Webpack
 
 ## v.1.0.0
