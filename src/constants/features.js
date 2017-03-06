@@ -16,7 +16,7 @@
             'Autoprefixer',
             'HTML/JS/CSS minification, uglification, concatenation',
             'Sourcemaps',
-            'Karma, Jasmine and PhantomJS for testing',
+            'Karma and Jasmine for testing',
             'Django CSRF protection support'
         ]);
 })();

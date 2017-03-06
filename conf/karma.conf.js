@@ -14,7 +14,6 @@ module.exports = function (config) {
             'Chrome'
         ],
         frameworks: [
-            'phantomjs-shim',
             'jasmine'
         ],
         files: listFiles(),
@@ -32,7 +31,6 @@ module.exports = function (config) {
             require('karma-junit-reporter'),
             require('karma-coverage'),
             require('karma-chrome-launcher'),
-            require('karma-phantomjs-shim'),
             require('karma-ng-html2js-preprocessor')
         ]
     };

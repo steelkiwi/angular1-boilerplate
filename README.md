@@ -28,7 +28,7 @@
 - [Autoprefixer](https://github.com/postcss/autoprefixer)
 - HTML/JS/CSS minification, uglification, concatenation
 - Sourcemaps
-- [Karma](https://github.com/karma-runner/karma), [Jasmine](https://github.com/jasmine/jasmine), [Protractor](https://github.com/angular/protractor) and [PhantomJS](https://github.com/ariya/phantomjs/) for testing
+- [Karma](https://github.com/karma-runner/karma), [Jasmine](https://github.com/jasmine/jasmine) and [Protractor](https://github.com/angular/protractor) for testing
 - [Django CSRF protection support](https://docs.djangoproject.com/en/1.10/ref/csrf/)
 
 

@@ -24,5 +24,5 @@
 - ES6 support via Babel.js
 - Autoprefixer
 - Sourcemaps
-- Karma, Jasmine and PhantomJS for testing
+- Karma and Jasmine for testing
 - Django CSRF protection support
