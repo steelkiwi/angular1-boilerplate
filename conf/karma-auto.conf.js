@@ -11,9 +11,10 @@ module.exports = function (config) {
             outputDir: 'test-reports'
         },
         browsers: [
-            'Chrome'
+            'PhantomJS'
         ],
         frameworks: [
+            'phantomjs-shim',
             'jasmine'
         ],
         files: listFiles(),
@@ -30,7 +31,9 @@ module.exports = function (config) {
             require('karma-jasmine'),
             require('karma-junit-reporter'),
             require('karma-coverage'),
-            require('karma-chrome-launcher'),
+            require('karma-phantomjs-launcher'),
+            require('karma-phantomjs-shim'),
+            require('karma-ng-html2js-preprocessor'),
             require('karma-ng-html2js-preprocessor')
         ]
     };
