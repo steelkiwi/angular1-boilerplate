@@ -5,7 +5,7 @@ module.exports = function (config) {
     const configuration = {
         basePath: '../',
         singleRun: false,
-        autoWatch: true,
+        autoWatch: false,
         logLevel: 'INFO',
         junitReporter: {
             outputDir: 'test-reports'
@@ -15,23 +15,17 @@ module.exports = function (config) {
         ],
         frameworks: [
             'phantomjs-shim',
-            'jasmine',
-            'angular-filesort'
+            'jasmine'
         ],
         files: listFiles(),
         preprocessors: {
             [conf.path.src('**/*.html')]: [
-                'ng-html2js'
+              'ng-html2js'
             ]
         },
         ngHtml2JsPreprocessor: {
             stripPrefix: `${conf.paths.src}/`,
             moduleName: 'app'
-        },
-        angularFilesort: {
-            whitelist: [
-                conf.path.tmp('**/!(*.html|*.spec|*.mock).js')
-            ]
         },
         plugins: [
             require('karma-jasmine'),
@@ -40,7 +34,7 @@ module.exports = function (config) {
             require('karma-phantomjs-launcher'),
             require('karma-phantomjs-shim'),
             require('karma-ng-html2js-preprocessor'),
-            require('karma-angular-filesort')
+            require('karma-ng-html2js-preprocessor')
         ]
     };
 

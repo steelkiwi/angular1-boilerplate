@@ -21,7 +21,6 @@
 - [Angular UI Router](https://github.com/angular-ui/ui-router)
 - [Bootstrap 3](https://github.com/twbs/bootstrap) (Less)
 - [Webpack](https://github.com/webpack/webpack)
-- Script injection via [Wiredep](https://github.com/taptapship/wiredep)
 - [BrowserSync](https://github.com/browsersync/browser-sync)
 - [ES6](http://www.ecma-international.org/ecma-262/6.0/) via [Babel](https://github.com/babel/babel/)
 - [ESLint](https://github.com/sindresorhus/xo)
@@ -35,19 +34,13 @@
 
 ## Usage
 
-- `npm run build` to build an optimized version of your application in `/dist`
-- `npm run serve` to launch a browser sync server on your source files
-- `npm run serve:dist` to launch a server on your optimized application
-- `npm run test` to launch your unit tests with Karma
-- `npm run test:auto` to launch your unit tests with Karma in watch mode
+If you have `gulp-cli` installed in global packages you can use gulp commands else use `npm` commands:
 
-If you have `gulp-cli` installed in global packages you can use equivalent:
-
-- `gulp` or `gulp build`
-- `gulp serve`
-- `gulp serve:dist`
-- `gulp test`
-- `gulp test:auto`
+- `gulp`, `gulp build` or `npm run build` to build an optimized version of your application in `/dist`
+- `gulp serve` or `npm run serve` to launch a browser sync server on your source files
+- `gulp serve:dist` or `npm run serve:dist` to launch a server on your optimized application
+- `gulp test` or `npm run test` to launch your unit tests with Karma
+- `gulp test:auto` or `npm run test:auto` to launch your unit tests with Karma in watch mode
 
 
 ## Style-guides
