@@ -10,13 +10,12 @@ const conf = require('../conf/gulp.conf');
 gulp.task('webpack', webpack);
 
 function getDep(){
-  const dep = [];
+    const dep = [];
 
-  for (var key in pjson.dependencies) {
-      dep.push('./' + key + '{/**/,/}' + key + '.min.js');
-  }
-  gulplog.info(dep);
-  return dep;
+    for (var key in pjson.dependencies) {
+        dep.push('./' + key);
+    }
+    return dep;
 }
 
 function webpack(callback) {
