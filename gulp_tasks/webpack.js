@@ -1,9 +1,9 @@
 const gulp = require('gulp');
 const gulpWebpack = require('webpack');
 const gulplog = require('gulplog');
-const path = require('path');
-const UglifyJsPlugin = require("webpack/lib/optimize/UglifyJsPlugin");
-const pjson = require("../package.json");
+const UglifyJsPlugin = require('webpack/lib/optimize/UglifyJsPlugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const pjson = require('../package.json');
 
 const conf = require('../conf/gulp.conf');
 
@@ -30,6 +30,10 @@ function webpack(callback) {
         plugins: [
             new UglifyJsPlugin({
                 compress: true
+            }),
+            new HtmlWebpackPlugin({
+              filename: 'index.html',
+              template: '../src/index.html'
             })
         ]
     };

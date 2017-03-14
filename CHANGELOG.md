@@ -1,7 +1,6 @@
 # Changelog
 
 ## v.NEXT
-- Support of the favicon generator
 - Sprites generator
 - ECMAScript 6 modules
 
