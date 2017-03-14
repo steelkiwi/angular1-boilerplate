@@ -24,7 +24,7 @@ function inject() {
         addRootSlash: false
     };
 
-    return gulp.src(conf.path.src('index.html'))
+    return gulp.src(conf.path.tmp('index.html'))
         .pipe(gulpInject(injectScripts, injectOptions))
         .pipe(gulp.dest(conf.paths.tmp))
         .pipe(browserSync.stream());
