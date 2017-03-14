@@ -67,7 +67,9 @@
     "karma-phantomjs-launcher": "^1.0.0",
     "karma-phantomjs-shim": "^1.1.2",
     "phantomjs-prebuilt": "^2.1.6",
-    "uglify-save-license": "^0.4.1"
+    "uglify-save-license": "^0.4.1",
+    "html-webpack-plugin": "^2.28.0",
+    "favicons-webpack-plugin": "^0.0.7"
   },
   "eslintConfig": {
     "globals": {
