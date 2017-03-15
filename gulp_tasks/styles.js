@@ -5,10 +5,12 @@ const less = require('gulp-less');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const lesshint = require('gulp-lesshint');
+const del = require('del');
 
 const conf = require('../conf/gulp.conf');
 
 gulp.task('styles', styles);
+gulp.task('delSpritesStyles', delSpritesStyles);
 
 function styles() {
     return gulp.src(conf.path.src('index.less'))
@@ -23,4 +25,8 @@ function styles() {
         .pipe(sourcemaps.write())
         .pipe(gulp.dest(conf.path.tmp()))
         .pipe(browserSync.stream());
+}
+
+function delSpritesStyles() {
+    return del(conf.path.src('styles/base/sprites.less'))
 }
