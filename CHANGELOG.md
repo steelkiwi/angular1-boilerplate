@@ -1,7 +1,6 @@
 # Changelog
 
 ## v.NEXT
-- Sprites generator
 - ECMAScript 6 modules
 
 ---
@@ -9,6 +8,7 @@
 ## v.1.2.0
 - Integration with the LessHint linter
 - Support of the favicon generator
+- Sprites generator
 
 ## v.1.1.0
 - Remove Bower and Wiredep
