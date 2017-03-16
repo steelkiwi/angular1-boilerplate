@@ -1,9 +1,5 @@
-(() => {
-    'use strict';
+import {app} from 'index';
 
-    angular
-        .module('app')
-        .component('footerSection', {
-            templateUrl: 'components/footer-section/footer-section.html'
-        });
-})();
+export default app.component('footerSection', {
+    templateUrl: 'components/footer-section/footer-section.html'
+});

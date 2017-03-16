@@ -1,12 +1,9 @@
-(() => {
-    'use strict';
+import {$stateProvider} from 'angular';
+import {homePage} from 'home';
 
-    angular
-        .module('app')
-        .config(['$stateProvider', $stateProvider => {
-            $stateProvider.state('app', {
-                url: '/',
-                component: 'homePage'
-            });
-        }]);
-})();
+export default app.config(['$stateProvider', $stateProvider => {
+    $stateProvider.state('app', {
+        url: '/',
+        component: 'homePage'
+    });
+}]);

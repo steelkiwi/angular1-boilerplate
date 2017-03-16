@@ -1,9 +1,5 @@
-(() => {
-    'use strict';
+import {app} from 'index';
 
-    angular
-        .module('app')
-        .component('headerSection', {
-            templateUrl: 'components/header-section/header-section.html'
-        });
-})();
+export default app.component('headerSection', {
+    templateUrl: 'components/header-section/header-section.html'
+});

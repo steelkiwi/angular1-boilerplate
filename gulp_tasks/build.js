@@ -43,7 +43,8 @@ function build() {
         .pipe(ngAnnotate())
         .pipe(uglify({
             preserveComments: uglifySaveLicense
-        })).on('error', conf.errorHandler('Uglify'))
+        }))
+        .on('error', conf.errorHandler('Uglify'))
         .pipe(rev())
         .pipe(sourcemaps.write('maps'))
         .pipe(jsFilter.restore)

@@ -1,24 +1,17 @@
-(() => {
-    'use strict';
+import {app} from 'index';
+import {projectFeaturesList} from 'features';
 
-    class HomePage {
-        static factory(...injections) {
-            return new HomePage(...injections);
-        }
-
-        constructor(projectFeaturesList) {
-            this.features = projectFeaturesList;
-        }
+class HomePage {
+    static factory(...injections) {
+        return new HomePage(...injections);
     }
 
-    HomePage.factory.$inject = [
-        'projectFeaturesList'
-    ];
+    constructor(projectFeaturesList) {
+        this.features = projectFeaturesList;
+    }
+}
 
-    angular
-        .module('app')
-        .component('homePage', {
-            templateUrl: 'pages/home/home.html',
-            controller: HomePage.factory
-        });
-})();
+export default app.component('homePage', {
+    templateUrl: 'pages/home/home.html',
+    controller: HomePage.factory
+});

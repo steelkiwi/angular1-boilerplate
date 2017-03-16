@@ -1,10 +1,6 @@
-(() => {
-    'use strict';
+import {app} from 'index';
 
-    angular
-        .module('app')
-        .component('app', {
-            templateUrl: 'containers/app/app.html',
-            transclude: true
-        });
-})();
+export default app.component('app', {
+    templateUrl: 'containers/app/app.html',
+    transclude: true
+});
