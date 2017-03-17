@@ -1,13 +1,13 @@
-const gulp = require('gulp');
-const browserSync = require('browser-sync');
-const sourcemaps = require('gulp-sourcemaps');
-const less = require('gulp-less');
-const postcss = require('gulp-postcss');
-const autoprefixer = require('autoprefixer');
-const lesshint = require('gulp-lesshint');
-const del = require('del');
+import gulp from 'gulp';
+import browserSync from 'browser-sync';
+import sourcemaps from 'gulp-sourcemaps';
+import less from 'gulp-less';
+import postcss from 'gulp-postcss';
+import autoprefixer from 'autoprefixer';
+import lesshint from 'gulp-lesshint';
+import del from 'del';
 
-const conf = require('../conf/gulp.conf');
+import conf from '../conf/gulp.conf';
 
 gulp.task('styles', styles);
 gulp.task('delSpritesStyles', delSpritesStyles);

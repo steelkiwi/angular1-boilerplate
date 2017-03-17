@@ -15,6 +15,7 @@ function getDep(){
     for (var key in pjson.dependencies) {
         dep.push('./' + key);
     }
+
     return dep;
 }
 

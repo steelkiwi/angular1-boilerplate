@@ -1,10 +1,10 @@
-const path = require('path');
+import path from 'path';
 
-const gulp = require('gulp');
-const del = require('del');
-const filter = require('gulp-filter');
+import gulp from 'gulp';
+import del from 'del';
+import filter from 'gulp-filter';
 
-const conf = require('../conf/gulp.conf');
+import conf from '../conf/gulp.conf';
 
 gulp.task('clean', clean);
 gulp.task('other', other);

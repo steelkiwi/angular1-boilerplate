@@ -1,8 +1,8 @@
-const gulp = require('gulp');
-const htmlmin = require('gulp-htmlmin');
-const angularTemplatecache = require('gulp-angular-templatecache');
+import gulp from 'gulp';
+import htmlmin from 'gulp-htmlmin';
+import angularTemplatecache from 'gulp-angular-templatecache';
 
-const conf = require('../conf/gulp.conf');
+import conf from '../conf/gulp.conf';
 
 gulp.task('partials', partials);
 
