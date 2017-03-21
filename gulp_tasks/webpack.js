@@ -1,11 +1,11 @@
-const gulp = require('gulp');
-const gulpWebpack = require('webpack');
-const gulplog = require('gulplog');
-const UglifyJsPlugin = require('webpack/lib/optimize/UglifyJsPlugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const pjson = require('../package.json');
+import gulp from 'gulp';
+import gulpWebpack from 'webpack';
+import gulplog from 'gulplog';
+import UglifyJsPlugin from 'webpack/lib/optimize/UglifyJsPlugin';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+import pjson from '../package.json';
 
-const conf = require('../conf/gulp.conf');
+import conf from '../conf/gulp.conf';
 
 gulp.task('webpack', webpack);
 

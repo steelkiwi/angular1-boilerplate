@@ -1,4 +1,4 @@
-import {app} from 'index';
+import app from 'index';
 
 export default app.component('mainSection', {
     templateUrl: 'components/main-section/main-section.html',
