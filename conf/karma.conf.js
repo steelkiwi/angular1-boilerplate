@@ -1,7 +1,7 @@
-const conf = require('./gulp.conf');
-const listFiles = require('./karma-files.conf');
+import conf from './gulp.conf';
+import listFiles from './karma-files.conf';
 
-module.exports = function (config) {
+module.exports = config => {
     const configuration = {
         basePath: '../',
         singleRun: true,
@@ -28,13 +28,12 @@ module.exports = function (config) {
             moduleName: 'app'
         },
         plugins: [
-            require('karma-jasmine'),
-            require('karma-junit-reporter'),
-            require('karma-coverage'),
-            require('karma-phantomjs-launcher'),
-            require('karma-phantomjs-shim'),
-            require('karma-ng-html2js-preprocessor'),
-            require('karma-ng-html2js-preprocessor')
+            'karma-jasmine',
+            'karma-junit-reporter',
+            'karma-coverage',
+            'karma-phantomjs-launcher',
+            'karma-phantomjs-shim',
+            'karma-ng-html2js-preprocessor'
         ]
     };
 

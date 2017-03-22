@@ -8,8 +8,8 @@
  *  of the tasks
  */
 
-const path = require('path');
-const gutil = require('gulp-util');
+import path from 'path';
+import gutil from 'gulp-util';
 
 exports.ngModule = 'app';
 
@@ -40,8 +40,8 @@ for (const pathName in exports.paths) {
 /**
  *  Common implementation for an error handler of a Gulp plugin
  */
-exports.errorHandler = function (title) {
-    return function (err) {
+exports.errorHandler = title => {
+    return err => {
         gutil.log(gutil.colors.red(`[${title}]`), err.toString());
         this.emit('end');
     };

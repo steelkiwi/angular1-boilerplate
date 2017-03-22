@@ -1,4 +1,4 @@
-const conf = require('./gulp.conf');
+import conf from './gulp.conf';
 
 module.exports = function listFiles() {
     const patterns = [
