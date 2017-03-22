@@ -1,7 +1,7 @@
-const path = require('path');
+import path from 'path';
 
-const gulp = require('gulp');
-const karma = require('karma');
+import gulp from 'gulp';
+import karma from 'karma';
 
 gulp.task('karma:single-run', karmaSingleRun);
 gulp.task('karma:auto-run', karmaAutoRun);

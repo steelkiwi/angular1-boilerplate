@@ -1,10 +1,10 @@
-const gulp = require('gulp');
-const gulpWebpack = require('webpack');
-const gulplog = require('gulplog');
-const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+import gulp from 'gulp';
+import gulpWebpack from 'webpack';
+import gulplog from 'gulplog';
+import FaviconsWebpackPlugin from 'favicons-webpack-plugin';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
 
-const conf = require('../conf/gulp.conf');
+import conf from'../conf/gulp.conf';
 
 gulp.task('favicons', faviconTask);
 
@@ -42,7 +42,7 @@ function faviconTask(callback) {
         ]
     };
 
-    return gulpWebpack(options, function(err, stat) {
+    return gulpWebpack(options, (err, stat) => {
         if (!err) {
             err = stat.toJson().errors[0];
         }

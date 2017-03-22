@@ -1,14 +1,12 @@
-(() => {
-    'use strict';
+import $urlRouterProvider from 'angular-router';
+import $locationProvider from 'angular';
+import app from 'index';
 
-    const config = ($urlRouterProvider, $locationProvider) => {
-        $locationProvider.html5Mode(true).hashPrefix('!');
-        $urlRouterProvider.otherwise('/');
-    };
+const config = ($urlRouterProvider, $locationProvider) => {
+    $locationProvider.html5Mode(true).hashPrefix('!');
+    $urlRouterProvider.otherwise('/');
+};
 
-    angular
-        .module('app')
-        .config([
-            '$urlRouterProvider', '$locationProvider', config
-        ]);
-})();
+export default app.config([
+    '$urlRouterProvider', '$locationProvider', config
+]);

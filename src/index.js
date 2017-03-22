@@ -1,8 +1,6 @@
-(() => {
-    'use strict';
+import angular from 'angular';
 
-    angular.module('app', [
-        'ngCookies',
-        'ui.router'
-    ]);
-})();
+export default angular.module('app', [
+    'ngCookies',
+    'ui.router'
+]);

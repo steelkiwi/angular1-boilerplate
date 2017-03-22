@@ -1,17 +1,17 @@
-const gulp = require('gulp');
-const filter = require('gulp-filter');
-const useref = require('gulp-useref');
-const rev = require('gulp-rev');
-const revReplace = require('gulp-rev-replace');
-const uglify = require('gulp-uglify');
-const cssnano = require('gulp-cssnano');
-const htmlmin = require('gulp-htmlmin');
-const sourcemaps = require('gulp-sourcemaps');
-const uglifySaveLicense = require('uglify-save-license');
-const inject = require('gulp-inject');
-const ngAnnotate = require('gulp-ng-annotate');
+import gulp from 'gulp';
+import filter from 'gulp-filter';
+import useref from 'gulp-useref';
+import rev from 'gulp-rev';
+import revReplace from 'gulp-rev-replace';
+import uglify from 'gulp-uglify';
+import cssnano from 'gulp-cssnano';
+import htmlmin from 'gulp-htmlmin';
+import sourcemaps from 'gulp-sourcemaps';
+import uglifySaveLicense from 'uglify-save-license';
+import inject from 'gulp-inject';
+import ngAnnotate from 'gulp-ng-annotate';
 
-const conf = require('../conf/gulp.conf');
+import conf from '../conf/gulp.conf';
 
 gulp.task('build', build);
 
@@ -43,7 +43,8 @@ function build() {
         .pipe(ngAnnotate())
         .pipe(uglify({
             preserveComments: uglifySaveLicense
-        })).on('error', conf.errorHandler('Uglify'))
+        }))
+        .on('error', conf.errorHandler('Uglify'))
         .pipe(rev())
         .pipe(sourcemaps.write('maps'))
         .pipe(jsFilter.restore)
