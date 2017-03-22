@@ -42,7 +42,6 @@
     "gulp-angular-templatecache": "^1.8.0",
     "gulp-babel": "^6.1.0",
     "gulp-cssnano": "^2.1.0",
-    "gulp-es6-module-transpiler": "^0.2.2",
     "gulp-eslint": "^2.0.0",
     "gulp-favicons": "^2.2.7",
     "gulp-filter": "^4.0.0",

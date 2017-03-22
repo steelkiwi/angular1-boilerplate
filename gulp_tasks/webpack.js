@@ -33,8 +33,8 @@ function webpack(callback) {
                 compress: true
             }),
             new HtmlWebpackPlugin({
-              filename: 'index.html',
-              template: '../src/index.html'
+                filename: 'index.html',
+                template: '../src/index.html'
             })
         ]
     };

@@ -10,11 +10,11 @@ const hub = new HubRegistry([conf.path.tasks('*.js')]);
 // Tell gulp to use the tasks just loaded
 gulp.registry(hub);
 
-gulp.task('inject', gulp.series('sprites', gulp.parallel(gulp.series('styles', 'delSpritesStyles'), 'scripts', 'webpack'), 'inject', 'favicons'));
-gulp.task('build', gulp.series('partials', gulp.parallel('inject', 'other'), 'build'));
+gulp.task('create', gulp.series('sprites', gulp.parallel('styles', 'scripts', 'webpack'), 'inject', 'favicons'));
+gulp.task('build', gulp.series('partials', gulp.parallel('create', 'other'), 'build'));
 gulp.task('test', gulp.series('scripts', 'karma:single-run'));
 gulp.task('test:auto', gulp.series('watch', 'karma:auto-run'));
-gulp.task('serve', gulp.series('inject', 'watch', 'browsersync'));
+gulp.task('serve', gulp.series('create', 'watch', 'browsersync'));
 gulp.task('serve:dist', gulp.series('default', 'browsersync:dist'));
 gulp.task('default', gulp.series('clean', 'build'));
 gulp.task('watch', watch);
@@ -34,6 +34,6 @@ function watch(done) {
         conf.path.src('**/*.less'),
         conf.path.src('**/*.css')
     ], gulp.series('styles'));
-    gulp.watch(conf.path.src('**/*.js'), gulp.series('inject'));
+    gulp.watch(conf.path.src('**/*.js'), gulp.series('scripts', 'inject'));
     done();
 }
