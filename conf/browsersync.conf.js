@@ -1,6 +1,6 @@
-const conf = require('./gulp.conf');
+import conf from './gulp.conf';
 
-module.exports = function () {
+module.exports = () => {
     return {
         server: {
             baseDir: [
