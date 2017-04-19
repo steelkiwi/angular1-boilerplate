@@ -22,15 +22,22 @@
 - [Bootstrap 3](https://github.com/twbs/bootstrap) (Less)
 - [Webpack](https://github.com/webpack/webpack)
 - [BrowserSync](https://github.com/browsersync/browser-sync)
-- [ES6](http://www.ecma-international.org/ecma-262/6.0/) via [Babel](https://github.com/babel/babel/)
+- [ES6 modules](http://www.ecma-international.org/ecma-262/6.0/) via [Babel](https://github.com/babel/babel/)
 - [ESLint](https://github.com/sindresorhus/xo)
 - [Less](https://github.com/less/less.js)
+- [Favicons generator](https://github.com/jantimon/favicons-webpack-plugin)
+- [Sprite generator](https://github.com/mixtur/webpack-spritesmith)
 - [Autoprefixer](https://github.com/postcss/autoprefixer)
 - HTML/JS/CSS minification, uglification, concatenation
 - Sourcemaps
 - [Karma](https://github.com/karma-runner/karma), [Jasmine](https://github.com/jasmine/jasmine), [Protractor](https://github.com/angular/protractor) and [PhantomJS](https://github.com/ariya/phantomjs/) for testing
 - [Django CSRF protection support](https://docs.djangoproject.com/en/1.10/ref/csrf/)
 
+## Instalation
+
+- install node if it not installed. [For linux](https://nodejs.org/en/download/package-manager/#arch-linux) or [for mac](https://nodejs.org/en/download/package-manager/#osx) and [npm](https://www.npmjs.com/get-npm?utm_source=house&utm_medium=homepage&utm_campaign=free%20orgs&utm_term=Install%20npm)
+- `npm install gulpjs/gulp-cli -g` for installing gulp-cli 4 if it not installed   
+- `npm i` - install all dependencies
 
 ## Usage
 
